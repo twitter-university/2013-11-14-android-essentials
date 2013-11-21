@@ -1,0 +1,33 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="5dp"
+        android:background="@drawable/twitter_bird_light">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/tweet_title_text"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edit_tweet"
+            android:hint="@string/edit_tweet_hint"
+            android:layout_weight="1"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_tweet_text"
+            android:id="@+id/button_tweet"
+            android:layout_gravity="center_horizontal"
+            />
+</LinearLayout>
